@@ -1,0 +1,63 @@
+.maindiv{
+    background-color: #1e1e1e;
+    color: #fff;
+}
+.contactcard-container{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin-block: 5px;
+    // align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    columns: 3;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 79vh;
+}
+
+.contactcard-container::-webkit-scrollbar{
+    width: 5px;
+    background: rgb(110, 110, 110);
+    border-radius: 5px;
+}
+.contactcard-container::-webkit-scrollbar-thumb{
+    width: 3px;
+    background: lightgray;
+    border-radius: 5px;
+}
+
+.statscard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+    .stat {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        background-color: #6e6e6e;
+        border-radius: 8px;
+        .statname{
+            color: #ebebeb;
+            font-size: 18px;
+        }
+        .statvalue{
+            color: #90ee90;
+            font-size: 18px;
+            font-weight: 800;
+        }
+    }
+    
+  }
+  
+  @media (max-width: 415px) {
+    .maindiv {
+      padding-inline: 0 !important;
+    }
+  }
+
+
+  

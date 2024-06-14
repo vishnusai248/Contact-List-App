@@ -1,0 +1,31 @@
+.Createcontact {
+    background: #1e1e1e ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+
+    
+    .createcard{
+        box-shadow: 1px 1px 10px 2px  rgb(173, 173, 173);
+        padding: 25px;
+        border-radius: 10px;
+        background-color: #504c4d;
+        width: 70%;
+        max-width: 350px;
+        input{
+            color: #000;
+        }
+        .form-field{
+            margin-block: 10px;
+        }
+        .form-label{
+            margin: 0px;
+        }
+
+        .required{
+            color: rgb(255, 51, 0);
+        }
+    }
+  }
