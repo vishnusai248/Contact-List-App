@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
@@ -12,7 +12,7 @@ function App() {
 
   const [contacts, setcontacts] = useState(dummyContacts)
   return (
-    <BrowserRouter>
+    <HashRouter>
     <datacontenxt.Provider value={{contacts,setcontacts}}>
 
       <div className='d-flex flex-column h-100 darktheme'>
@@ -25,7 +25,7 @@ function App() {
         </Routes>
       </div>
     </datacontenxt.Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
